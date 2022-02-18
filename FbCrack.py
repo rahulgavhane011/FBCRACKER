@@ -80,5 +80,8 @@ def welcome():
 	print (" [*] Loaded :" , len(total), "passwords")
 	print (" [*] Cracking, please wait ...\n\n")
 	
+	
+	
+	
 if __name__ == '__main__':
 	main()
